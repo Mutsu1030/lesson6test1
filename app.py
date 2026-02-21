@@ -36,7 +36,7 @@ def app(environ, start_response):
 
             result = f"<p>BMI: {bmi:.1f}（{category}）</p>"
         except Exception as e:
-            result = f"<p style='color:red;'>入力エラー: {e}</p>"
+            result = f"<p style='color:red;'>クリア: {e}</p>"
 
     # --- HTML生成 ---
     html = f"""<!DOCTYPE html>
