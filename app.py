@@ -77,8 +77,9 @@ def app(environ, start_response):
 # --- メイン起動部 ---
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
-    # host = "0.0.0.0"
-    host = 'localhost'
-    print(f"Server running on http://{host}:{port}")
+    host = "0.0.0.0"
+    # host = 'localhost'
+    # print(f"Server running on http://{host}:{port}")
+    print(f"Server running on http://localhost:{port}")
     with make_server(host, port, app) as httpd:
         httpd.serve_forever()
