@@ -63,6 +63,7 @@ def app(environ, start_response):
       </head>
       <body> 
         <h1>BMI計算機</h1>
+        <p>このアプリでは、身長と体重を入力するだけであなたのBMIと肥満度を判定できます。</p>
         <form method="post">
           <label>身長(cm): <input type="number" id="height" name="height" step="any" required></label><br><br>
           <label>体重(kg): <input type="number" id="weight" name="weight" step="any" required></label><br><br>
